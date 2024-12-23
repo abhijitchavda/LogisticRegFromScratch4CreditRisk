@@ -24,7 +24,9 @@ This project implements Logistic Regression from scratch to predict credit risk 
 
 2. **Cost Function with Regularization**
 - Measures the model’s performance while penalizing large weights:
-        J(w, b) = -\frac{1}{m} \sum \left[ y \log(\hat{y}) + (1 - y) \log(1 - \hat{y}) \right] + \frac{\lambda}{2m} \sum w^2
+  \[ 
+J(w, b) = -\frac{1}{m} \sum \left[ y \log(\hat{y}) + (1 - y) \log(1 - \hat{y}) \right] + \frac{\lambda}{2m} \sum w^2 
+  \]
 
 3. **Gradient Descent**
 - Optimize the predictions
