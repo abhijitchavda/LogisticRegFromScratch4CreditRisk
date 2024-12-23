@@ -20,16 +20,16 @@ This project implements Logistic Regression from scratch to predict credit risk 
 ### Logistic Regression Model
 1. **Sigmoid Function**
 - The sigmoid function maps predictions into probabilities:
-        \sigma(z) = \frac{1}{1 + e^{-z}}
+        - $$\sigma(z) = \frac{1}{1 + e^{-z}}$$
 
 2. **Cost Function with Regularization**
 - Measures the model’s performance while penalizing large weights
-- $$J(w, b) = -\frac{1}{m} \sum \left[ y \log(\hat{y}) + (1 - y) \log(1 - \hat{y}) \right] + \frac{\lambda}{2m} \sum w^2$$
+        - $$J(w, b) = -\frac{1}{m} \sum \left[ y \log(\hat{y}) + (1 - y) \log(1 - \hat{y}) \right] + \frac{\lambda}{2m} \sum w^2$$
 
 3. **Gradient Descent**
 - Optimize the predictions
-- $$w = w - \alpha \cdot \frac{\partial J}{\partial w}$$
-- $$b = b - \alpha \cdot \frac{\partial J}{\partial b}$$
+        - $$w = w - \alpha \cdot \frac{\partial J}{\partial w}$$
+        - $$b = b - \alpha \cdot \frac{\partial J}{\partial b}$$
 
 4. **Auto-Convergence Check**
 - Checks whether the cost function has stabilized below a threshold (epsilon = 0.00001).
