@@ -23,13 +23,13 @@ This project implements Logistic Regression from scratch to predict credit risk 
         \sigma(z) = \frac{1}{1 + e^{-z}}
 
 2. **Cost Function with Regularization**
-- Measures the model’s performance while penalizing large weights:
-  $$J(w, b) = -\frac{1}{m} \sum \left[ y \log(\hat{y}) + (1 - y) \log(1 - \hat{y}) \right] + \frac{\lambda}{2m} \sum w^2$$
+- Measures the model’s performance while penalizing large weights
+- $$J(w, b) = -\frac{1}{m} \sum \left[ y \log(\hat{y}) + (1 - y) \log(1 - \hat{y}) \right] + \frac{\lambda}{2m} \sum w^2$$
 
 3. **Gradient Descent**
 - Optimize the predictions
-        w = w - \alpha \cdot \frac{\partial J}{\partial w}
-        b = b - \alpha \cdot \frac{\partial J}{\partial b}
+- $$w = w - \alpha \cdot \frac{\partial J}{\partial w}$$
+- $$b = b - \alpha \cdot \frac{\partial J}{\partial b}$$
 
 4. **Auto-Convergence Check**
 - Checks whether the cost function has stabilized below a threshold (epsilon = 0.00001).
@@ -40,8 +40,7 @@ This project implements Logistic Regression from scratch to predict credit risk 
 
 ### Evaluation Metrics
 1. Precision: Measures accuracy of positive predictions.
-2. Recall: Measures the ability to detect positive cases.
-3. Formulas:
-        \text{Precision} = \frac{TP}{TP + FP}
-        \text{Recall} = \frac{TP}{TP + FN}
+   - $$\text{Precision} = \frac{TP}{TP + FP}$$
+3. Recall: Measures the ability to detect positive cases.
+   - $$\text{Recall} = \frac{TP}{TP + FN}$$
 
